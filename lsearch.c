@@ -46,3 +46,38 @@ int main() {
     
     return 0;
 }
+
+
+
+
+//COUNT FREQUENCY OF A GIVEN NUMBER IN AN ARRAY
+#include <iostream>
+using namespace std;
+
+int l_search(int *a,int n,int val)
+{
+    int count=0;
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]==val)
+        {
+            count++;
+        }
+    }
+    return count;
+   
+    
+}
+int main() {
+    int arr[]={1,2,2,2,3,5,6};
+    int val=2;
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int frequency=l_search(arr,n,val);
+    if(frequency==0){cout<<"Not found"<<endl;}
+    else{
+        cout<<"The element was occured "<<frequency<<" times in an array"<<endl;
+    }
+   
+    
+    return 0;
+}
