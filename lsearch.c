@@ -23,7 +23,7 @@ int main()
 	return 0;
 }
 
-//METHOD2:
+//METHOD2:(finding the firstindex  occurence of the an element,automatically taken care by linear search)
 #include <iostream>
 using namespace std;
 
