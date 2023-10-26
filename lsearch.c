@@ -22,3 +22,27 @@ int main()
 	l_search(arr,SIZE,key);
 	return 0;
 }
+
+//METHOD2:
+#include <iostream>
+using namespace std;
+
+int l_search(int *a,int n,int val)
+{
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]==val){return i;}
+    }
+    return -1;
+    
+}
+int main() {
+    int arr[]={1,2,3,5,6};
+    int val=3;
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int index=l_search(arr,n,val);
+    cout<<index;
+   
+    
+    return 0;
+}
